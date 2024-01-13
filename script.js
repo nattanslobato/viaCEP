@@ -28,3 +28,7 @@ const mostrarDados = (data) => {
     `
   }
 }
+
+const apagarResposta = () => {
+  resultado.innerHTML = ''
+}
