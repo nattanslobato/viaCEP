@@ -14,7 +14,10 @@ const buscarEndereco = () => {
 const mostrarDados = (data) => {
   let resultado = document.querySelector("#resultado");
   if(data.erro){
-    alert("CEP não encontrado!!!");
+    resultado.innerHTML = 
+    `
+    <h2>CEP não encontrado!!!</h2>
+    `
 
   } else{
     resultado.innerHTML = 
