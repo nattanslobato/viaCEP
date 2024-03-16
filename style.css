@@ -5,7 +5,7 @@
 }
 
 #container{
-
+    position: absolute;
     width: 100%;
     height: 100vh;
     background: url(img/imagem.svg);
@@ -30,19 +30,32 @@
 
 #container input{
     border-radius: 5px;
-    width: 200px;
-    height: 25px;
+    width: 10vw;
+    height: 3vh;
     margin: 15px;
     padding: 5px;
 
 }
 
-#container button{
+#bloco .buttons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+    width: 20vw;
+    height: 10vh;
+}
+
+.buttons button{
+    align-self: center;
     border-radius: 10px;
     border: none;
     background-color: rgb(35, 207, 43);
     font-size: 18px;
-    width: 150px;
+    max-width: 150px;
+    width: 30vw;
     height: 30px;
 
     cursor: pointer;
